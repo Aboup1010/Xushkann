@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #ff5fa2, #ffc0da);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 40px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(255, 0, 100, 0.3);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 2s ease;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    background: #ff2f92;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 30px rgba(255, 0, 120, 0.6);
+}
+
+#message {
+    margin-top: 20px;
+    color: white;
+    font-size: 22px;
+}
+
+.music {
+    margin-top: 30px;
+}
+
+/* ❤️ floating hearts */
+.heart {
+    position: absolute;
+    bottom: -20px;
+    color: #ff2f92;
+    font-size: 24px;
+    animation: float 6s linear infinite;
+}
+
+/* animations */
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
