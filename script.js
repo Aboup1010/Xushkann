@@ -2,7 +2,7 @@ const button = document.getElementById("loveBtn");
 const message = document.getElementById("message");
 
 button.addEventListener("click", () => {
-    message.textContent = "💘 Kanar, You are my heart 💘";
+    message.textContent = "💘 Xushkan, You Are My Heart 💘";
     createHeart();
 });
 
@@ -20,4 +20,5 @@ function createHeart() {
     setTimeout(() => {
         heart.remove();
     }, 6000);
+
 }
