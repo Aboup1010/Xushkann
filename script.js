@@ -2,7 +2,7 @@ const button = document.getElementById("loveBtn");
 const message = document.getElementById("message");
 
 button.addEventListener("click", () => {
-    message.textContent = "💘 Xushkann, You are my heart 💘";
+    message.textContent = "💘 Kanar, You are my heart 💘";
     createHeart();
 });
 
